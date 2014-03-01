@@ -48,6 +48,40 @@ h1 small{
     color: #636363; 
 }
 
+.input {
+    font-family:"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; 
+    margin-left: 25%;
+    margin-right:20%;
+    font-size: 18px; 
+    display: block; 
+    color: #636363; 
+}
+
+.mainbutton {
+    font-size:100%;
+    font-family:Georgia, serif;
+    color:#FFFFFF;
+    width:80%;
+    height:5%;
+    background-color:#474f4f;
+    border-top-style:double;
+    border-top-color:#FFFFFF;
+    border-top-width:4px;
+    border-bottom-style:double;
+    border-bottom-color:#FFFFFF;
+    border-bottom-width:4px;
+    border-left-style:double;
+    border-left-color:#FFFFFF;
+    border-left-width:4px;
+    border-right-style:double;
+    border-right-color:#FFFFFF;
+    border-right-width:4px;
+}
+
+#title {
+    width: 60%;
+}
+
 .normalText {
     font-family:"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; 
     margin-top: 10%;
