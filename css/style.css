@@ -57,6 +57,15 @@ h1 small{
     color: #636363; 
 }
 
+#contact {
+    font-family:"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; 
+    text-align: center;
+    margin-top:3%;
+    font-size: 24px; 
+    display: block; 
+    color: #636363; 
+}
+
 .mainbutton {
     font-size:100%;
     font-family:Georgia, serif;
