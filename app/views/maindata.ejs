@@ -25,7 +25,8 @@
            <div style="margin-left: 15%;">
         <div class="ui items">
         <% for (var i = 0; i<data.items.length;i++) { %>
-          <div class="item">
+
+          <div class="item" style="min-height: 500px" onclick="location.href='<%=data.items[i].url%>';">
             <div class="content">
               <div class="meta"><%=: details[i].items[0]["Starting date:"] | fromNow%> </div> 
              <div class="meta" style="float: left;"><%= details[i].items[0]["Type of communication:"]%> </div><br/>
@@ -38,7 +39,6 @@
             </div>
 
           </div>
-
     <%};%>
     </div>
         </div>
