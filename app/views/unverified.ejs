@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<title>Team Avatar</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/semantic.css"</css>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <nav>
+                <ul id="NavMenu">
+                    <li><a href="/" title="Home">Official Recalls</a></li>
+                    <li><a href="/unofficial">Reported by people</a></li>
+                    <li><a href="/report">Report a Problem</a></li>                 
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div style="margin-left: 15%; margin-right:10%;">
+        <div class="ui items">
+        <%reports.forEach(function(report){%>
+          <div style="min-height: 200px;"class="item">
+            <div class="content">
+              <div class="meta"><%=: report.date | fromNow%> </div>
+              <div class="name"><%=report.title%></div>
+              <div class="extra"><%=report.category %> from <%= report.distribution%></div>
+              <p class="description"><%=report.description%></p>
+            </div>
+            <!-- <div class="extra">
+                199 votes
+            </div> -->
+          </div>
+<!--     <div>
+        <h3> <%=report.title%></h3>
+        <h4> <%=report.category %> from <%= report.distribution%></h4> 
+        <div> <%=: report.date | fromNow%> </div>
+        <div> </div>
+    </div> -->
+    <%});%>
+    </div>
+    </div>
+    <a href="./images/background.jpg"></a>
+    <!-- // <script src="/js/semantic.js"></script> -->
+</body>
+</html>

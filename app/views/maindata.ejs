@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<title>Team Avatar</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.css"</css>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <nav>
+                <ul id="NavMenu">
+                    <li><a href="/" title="Home">Official Recalls</a></li>
+                    <li><a href="/unofficial">Reported by people</a></li>
+                    <li><a href="/report">Report a Problem</a></li>                 
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="intro">
+            <h1>Canadian Food Recalls<small>The easiest way to know about dangerous food items and restaurants around your area.</small></h1><br><br><br><br>
+
+           <div style="margin-left: 15%; margin-right:10%;">
+        <div class="ui items">
+        <% for (var i = 0; i<data.items.length;i++) { %>
+          <div class="item">
+            <div class="content">
+              <div class="meta"><%=: details[i].items[0]["Starting date:"] | fromNow%> </div> 
+             <div class="meta" style="float: left;"><%= details[i].items[0]["Type of communication:"]%> </div><br/>
+            <div class="meta" style="float: left;"><%= details[i].items[0]["Alert sub-type:"]%> </div><br/>
+            <div class="meta" style="float: left;"><%= details[i].items[0]["Subcategory:"]%> </div><br/>    
+                <br/>
+              <div class="name"><%=data.items[i].itemName%></div>
+              <br/>
+              <p class="description"><%=data.items[i].description%></p>
+            </div>
+
+          </div>
+
+    <%};%>
+    </div>
+        </div>
+    </div>
+    <a href="./images/background.jpg"></a>
+</body>
+</html>
