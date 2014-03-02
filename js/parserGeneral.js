@@ -1,5 +1,4 @@
-//url to parse: http://www.healthycanadians.gc.ca/recall-alert-rappel-avis/search-recherche/simple?s=&plain_text=&f_mc=1&js_en=&page=1000
-var parsed = '';
+var parsedGenearalInfo = '';
 function parseBriefInfo() {
   var temp = '';
   var resultTxt = '{ "items":[';
@@ -16,18 +15,5 @@ function parseBriefInfo() {
   }
   temp = temp.substring(0, temp.length - 2);
   resultTxt += temp + ']}';
-  //resultTxt = JSON.stringify(eval("(" + resultTxt + ")"));
-  //console.log(resultTxt);
-  //resultTxt = jQuery.parseJSON( resultTxt );
-  parsed = jQuery.parseJSON( resultTxt );
+  parsedGenearalInfo = jQuery.parseJSON( resultTxt );
 }
-
-
-{"items":[
-  {
-    "itemName":" Undeclared milk in Burnbrae Farms brand Dried Whole Eggs ",
-    "description":" Undeclared milk in Burnbrae Farms brand Dried Whole Eggs Dried Whole Eggs 22.7 kg Burnbrae Farms food recall, food recalls, allergy alert, allergy alerts, public warning, food safety, food borne illness, food poisoning, food allergy, food allergies, milk, Burnbrae Farms... ",
-    "url":"http://www.healthycanadians.gc.ca/recall-alert-rappel-avis/inspection/2014/38163r-eng.php"}
-  ]
-}
-
