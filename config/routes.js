@@ -22,7 +22,7 @@ module.exports = function(app){
 
 	// Get: login request
 	app.get('/', function(req, res){
-		if(data){
+		if(data && data_details && data.items.length == data_details.length){
 			res.render('maindata',{
 				data : data,
 				details : data_details
